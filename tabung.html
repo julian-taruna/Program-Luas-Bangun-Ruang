@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title> Program Menghitung Luas Tabung </title>
+    </head>
+    <body>
+    <hr>
+        Rumus Luas Tabung =  2 × phi (3.14) × r (r+t)
+    <hr>
+        <h3> Perhitungan  </h3>
+        <p> Silahkan input panjang Jari-jari pada kolom dibawah ini. </p>
+        <input type="text" id="r" oninput="hasil()">
+        <p> Silahkan input panjang Tinggi Tabung pada kolom dibawah ini. </p>
+        <input type="text" id="t" oninput="hasil()">
+    <hr>
+        <p id="hasil"></p>
+    <hr>
+        <script>
+
+            function hasil(){
+                var r = document.getElementById('r').value;
+                var t = document.getElementById('t').value;
+                var hasil = (2*22*r(t+r))/7;
+
+                document.getElementById('hasil').innerHTML = "Hasil Perhitungan Luas Tabung = " + hasil;
+            }
+        </script>
+    </body>
+</html>

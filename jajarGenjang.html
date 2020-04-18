@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title> Program Menghitung Luas Jajar Genjang dan Kelilingnya </title>
+    </head>
+    <body>
+
+    <!-- Luas Jajar Genjang -->
+    <hr>
+        Rumus Luas Jajar Genjang =  sisi alas * tinggi
+    <hr>
+        <h3> Perhitungan  </h3>
+        <p> Silahkan input panjang sisi alas pada kolom dibawah ini. </p>
+        <input type="text" id="a" oninput="hasilLu()">
+        <p> Silahkan input panjang tinggi pada kolom dibawah ini. </p>
+        <input type="text" id="t" oninput="hasilLu()">
+    <hr>
+        <p id="hasilLu"></p>
+    <hr>
+        <script>
+
+            function hasilLu(){
+                var a = document.getElementById('a').value;
+                var t = document.getElementById('t').value;
+                var hasilLu = a * t;
+
+                document.getElementById('hasilLu').innerHTML = "Hasil Perhitungan Luas Jajar Genjang = " + hasilLu + "cm2";
+            }
+        </script>
+
+<br>
+<hr>
+<br>
+
+    <!-- Keliling Jajr Genjang -->
+    <hr>
+        Rumus Keliling Jajar Genjang =  2 * (sisi alas (a) + sisi miring (b))
+    <hr>
+        <h3> Perhitungan  </h3>
+        <p> Silahkan input panjang sisi alas pada kolom dibawah ini. </p>
+        <input type="text" id="sa" oninput="hasilKell()"> 
+        <p> Silahkan input panjang sisi miring pada kolom dibawah ini. </p>
+        <input type="text" id="b" oninput="hasilKell()"> 
+    <hr>
+        <p id="hasilKell"></p>
+    <hr>
+        <script>
+
+            function hasilKell(){
+                var sa = document.getElementById('sa').value;
+                var b = document.getElementById('b').value;
+                var hasilKell = sa+b;
+                var total = hasilKell * 2
+
+                document.getElementById('total').innerHTML = "Hasil Perhitungan Keliling Jajar Genjang = " + total + "cm";
+            }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title> Program Menghitung Luas Prisma Segitiga </title>
+    </head>
+    <body>
+    <hr>
+        Rumus Luas Kubus =  6 * sisi * sisi
+    <hr>
+        <h3> Perhitungan  </h3>
+        <p> Silahkan input panjang sisi kubus pada kolom dibawah ini. </p>
+        <input type="text" id="s" oninput="hasil()">
+    <hr>
+        <p id="hasil"></p>
+    <hr>
+        <script>
+
+            function hasil(){
+                var s = document.getElementById('s').value;
+                var hasil = 6 * s * s;
+
+                document.getElementById('hasil').innerHTML = "Hasil Perhitungan Luas Kubus = " + hasil + "cm2";
+            }
+        </script>
+    </body>
+</html>
